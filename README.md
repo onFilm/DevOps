@@ -1,4 +1,4 @@
-# devops/Jenkins
+# DevOps/Jenkins
 
 ### Downloading and running Jenkins
     |-Download Jenkins Web Archieve.
