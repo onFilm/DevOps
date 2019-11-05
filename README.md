@@ -36,3 +36,6 @@ Add Three more plugins</br>
 `    |-------1) CheckStyles`</br>
 `    |-------2) PMD`</br>
 `    |-------3) FindBugs`</br>
+
+Modify the maven based project --> check all check boxes in Build Settings
+Add the maven goal as "**clean package checkstyle:checkstyle pmd:pmd findbugs:findbugs**"
