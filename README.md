@@ -15,29 +15,29 @@ CI, short for **Continuous Integration**, is a software development practice in 
 #### Post Jenkins setup
 
 Install JDK </br>
-`     |-------Add JAVA_HOME to system environment path`
+`    Add JAVA_HOME to system environment path`
      
 Install Git SCM </br>
 
 Install Maven </br>
-`     |-------Add MAVEN_HOME to system environment path`</br>
+`    Add MAVEN_HOME to system environment path`</br>
      
 Goto Jenkins Home -> Manage Jenkins -> Global Tool Configuration  </br>
-`     |-------Add JDK, paste the java home path`</br>
-`     |-------Add Maven, paste the maven home path`</br>
+`    Add JDK, paste the java home path`</br>
+`    Add Maven, paste the maven home path`</br>
 
 Create a freestyle project </br>
-`     |-------use SCM as git -> provide git repository url`</br>
+`    use SCM as git -> provide git repository url`</br>
     
 Create a maven based project </br>
-`    |-------use SCM as git -> provide git repository url`</br>
-`    |-------add Build step -> clean install`</br>
-`    |-------click build now`</br>
+`    use SCM as git -> provide git repository url`</br>
+`    Add Build step -> clean install`</br>
+`    click build now`</br>
     
 Add Three more plugins</br>
-`    |-------1) CheckStyles`</br>
-`    |-------2) PMD`</br>
-`    |-------3) FindBugs`</br>
+`    CheckStyles`</br>
+`    PMD`</br>
+`    FindBugs`</br>
 
 Modify the maven based project --> check all check boxes in Build Settings
 Add the maven goal as "**clean package checkstyle:checkstyle pmd:pmd findbugs:findbugs**"
